@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'blue-fromi': '#0680ba', //Azul elegido por mi
+      },
     },
   },
   plugins: [],
