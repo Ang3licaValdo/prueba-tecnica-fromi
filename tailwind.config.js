@@ -7,7 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blue-fromi': '#0680ba', //Azul elegido por mi
+        'blue-fromi': '#0680ba', 
+        'lilac': '#CED8FF',
+        'baby-blue': '#D0EFE8',
+        'yellow': '#FFDE59',
+        'baby-green': '#D2FF99'
       },
     },
   },
