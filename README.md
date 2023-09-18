@@ -1,3 +1,6 @@
+The project is already deployed in Vercel, here's the link:
+[Prueba Tecnica Fromi](https://prueba-tecnica-fromi-h4d8czuuo-ang3licavaldo.vercel.app)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
