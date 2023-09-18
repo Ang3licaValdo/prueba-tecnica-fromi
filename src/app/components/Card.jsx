@@ -48,22 +48,22 @@ function Card() {
         
         <AnimatePresence>
             {apiData && (
-                    <motion.div className="flex flex-row onset-0 h-full w-full justify-evenly items-center">
+                    <motion.div className='flex flex-row onset-0 h-full w-full justify-evenly items-center'>
                         {
                             apiData.map((employee) => (
                                 <>
-                                <motion.div key={employee.Apellido+employee.Name} whileHover={{ scale: 1.2 }} layoutId={employee.Nombre} className="flex flex-col w-72 h-56 justify-evenly items-center bg-blue-fromi rounded-md cursor-pointer shadow-lg "
+                                <motion.div key={employee.Apellido+employee.Name} whileHover={{ scale: 1.2 }} layoutId={employee.Nombre} className='flex flex-col w-72 h-56 justify-evenly items-center bg-blue-fromi rounded-md cursor-pointer shadow-lg '
                                     onClick={() => setEmployeeIDtoShowInfo(employee)}>
-                                    <motion.div className="square flex rounded-full">
-                                        <Image src={employee.Imagen} alt={`Imagen`} width={90} height={95} className=" rounded-full square-image" />
+                                    <motion.div className='square flex rounded-full'>
+                                        <Image src={employee.Imagen} alt={`Imagen`} width={90} height={95} className=' rounded-full square-image' />
                                     </motion.div>
                                     <motion.div className='flex flex-col justify-center text-center'>
-                                        <motion.h1 className="text-white font-bold">{employee.Nombre}</motion.h1>
-                                        <motion.h1 className="text-white font-bold">{employee.Apellido}</motion.h1>
+                                        <motion.h1 className='text-white font-bold'>{employee.Nombre}</motion.h1>
+                                        <motion.h1 className='text-white font-bold'>{employee.Apellido}</motion.h1>
                                     </motion.div>
                                     
                                 </motion.div>
-                                {/* Condition to ensure that only the one clicked is shown */}
+                                {/* Condition to ensure that only the card clicked is shown */}
                                 {showModal && employeeID === employee && (
                                     <Modal setShowModal={setShowModal} showModal={setShowModal} employeeID={employee} setEmployeeID={setEmployeeID} setAllowOnClick={setAllowOnClick} allowOnClick={allowOnClick}/>
                                 )}
