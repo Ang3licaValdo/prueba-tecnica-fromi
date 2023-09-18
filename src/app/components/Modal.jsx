@@ -28,9 +28,23 @@ function Modal({setShowModal, employeeID, setEmployeeID, setAllowOnClick, allowO
                             </motion.div>
                             <motion.div className="flex flex-col justify-center items-center w-52">
                                 <motion.h5 className="text-black font-bold font-bold-title text-xl text-center">{employeeID.Nombre} {employeeID.Apellido}</motion.h5>   
-                                <motion.h5 className="text-black font-body text-center">{employeeID.Correo}</motion.h5>    
-                                <motion.h5 className="text-black font-body text-center">{employeeID.Telefono}</motion.h5>   
-                                <motion.h5 className="text-black font-body text-justify">{employeeID.Direccion}</motion.h5>
+                                <motion.div className='flex'>
+                                    <p className='text-black font-bold font-bold-title text-lg text-center pr-1'>Correo: </p>
+                                    <motion.h5 className="text-black font-body text-center">{employeeID.Correo}</motion.h5>    
+                                </motion.div>
+                                <motion.div className='flex'>
+                                    <p className='text-black font-bold font-bold-title text-lg text-center pr-1'>Telefono: </p>
+                                    <motion.h5 className="text-black font-body text-center">{employeeID.Telefono}</motion.h5>   
+                                </motion.div>
+                                <motion.div className='flex flex-col'>
+                                    <p className='text-black font-bold font-bold-title text-lg text-center pr-1'>Direccion: </p>
+                                    <motion.h5 className="text-black font-body text-justify">{employeeID.Direccion}</motion.h5>
+                                </motion.div>
+                                <motion.div className='flex flex-col'>
+                                    <p className='text-black font-bold font-bold-title text-lg text-center pr-1'>Fecha de Nacimiento: </p>
+                                    <motion.h5 className="text-black font-body text-center">{employeeID["Fecha de Nacimiento"]}</motion.h5>    
+                                </motion.div>
+                                {/* <motion.h5 className="text-black font-body text-justify">{employeeID.Fecha de Nacimiento}</motion.h5> */}
                                 
                             </motion.div> 
                         </motion.div>

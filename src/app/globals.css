@@ -22,3 +22,14 @@
     font-family: 'Bebas Neue', sans-serif;
 }
 
+.square{
+    width: 120px;
+    height: 115px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.square-image {
+    width: 100%;
+  height: auto;
+  }

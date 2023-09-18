@@ -52,11 +52,15 @@ function Card() {
                         {
                             apiData.map((employee) => (
                                 <>
-                                <motion.div key={employee.Apellido+employee.Name} whileHover={{ scale: 1.2 }} layoutId={employee.Nombre} className="flex flex-col w-72 h-56 justify-center items-center bg-blue-fromi rounded-md cursor-pointer shadow-lg "
+                                <motion.div key={employee.Apellido+employee.Name} whileHover={{ scale: 1.2 }} layoutId={employee.Nombre} className="flex flex-col w-72 h-56 justify-evenly items-center bg-blue-fromi rounded-md cursor-pointer shadow-lg "
                                     onClick={() => setEmployeeIDtoShowInfo(employee)}>
-                                    <Image src={employee.Imagen} alt={`Imagen`} width={90} height={95} className="rounded-lg m-3" />
-                                    <motion.h1 className="text-white font-bold">{employee.Nombre}</motion.h1>
-                                    <motion.h1 className="text-white font-bold">{employee.Apellido}</motion.h1>
+                                    <motion.div className="square flex rounded-full">
+                                        <Image src={employee.Imagen} alt={`Imagen`} width={90} height={95} className=" rounded-full square-image" />
+                                    </motion.div>
+                                    <motion.div className='flex flex-col justify-center text-center'>
+                                        <motion.h1 className="text-white font-bold">{employee.Nombre}</motion.h1>
+                                        <motion.h1 className="text-white font-bold">{employee.Apellido}</motion.h1>
+                                    </motion.div>
                                     
                                 </motion.div>
                                 {/* Condition to ensure that only the one clicked is shown */}
