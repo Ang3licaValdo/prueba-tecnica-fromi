@@ -9,11 +9,13 @@ function SchoolDiv() {
     const [isHovered, setIsHovered] = useState(false);
     const controls = useAnimation();
 
+    // When the coursor is over the element this function is triggered
     const handleMouseEnter = () => {
         setIsHovered(true);
         controls.start({ rotateY: 360 });
     };
 
+    // When the coursor leaves the element this function is triggered
     const handleMouseLeave = () => {
         setIsHovered(false);
         controls.start({ rotateY: 0 });
@@ -27,9 +29,6 @@ function SchoolDiv() {
                     <Image src={'/escom.png'} width={180} height={0}></Image>
                     <Image src={'/UPM.jpg'} width={200} height={0} className='rounded-md'></Image>
 
-
-                    
-                    
                 </div>
             ) : (
                 <div className='flex justify-center items-center h-full w-full'>

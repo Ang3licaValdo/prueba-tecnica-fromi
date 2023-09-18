@@ -41,8 +41,6 @@ function Button({string, icon, link}) {
                             {icon}
                         </motion.div>
                     </motion.div>
-                    
-                    
                 </motion.button>
             </Link>
         </motion.div>
