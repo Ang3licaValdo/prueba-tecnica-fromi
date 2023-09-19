@@ -3,13 +3,13 @@ import Image from 'next/image';
 import { motion} from 'framer-motion';
 import { RxCross2 } from 'react-icons/rx';
 
-function Modal({setShowModal, employeeID, setEmployeeID, setAllowOnClick, allowOnClick}) {
+function Modal({employeeID, setEmployeeID, setAllowOnClick, allowOnClick}) {
     //this function sets the employee to null so we stop seeing the specific detailes information of one employee
     const setToNull = () => {
         if(!allowOnClick){
             setEmployeeID(null);
             setAllowOnClick(true);
-            setShowModal(false);
+            // setShowModal(false);
         }
     }
     return ( 

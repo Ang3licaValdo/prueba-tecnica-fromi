@@ -17,14 +17,14 @@ function Card() {
     const[allowOnClick, setAllowOnClick] = useState(true);
 
     //state used to only show the modal of the selected card
-    const[showModal, setShowModal] = useState(false);
+    // const[showModal, setShowModal] = useState(false);
 
      //function to set the employee ID to the state to show more info of them
      const setEmployeeIDtoShowInfo = (employee) => {
         if(allowOnClick){
             setEmployeeID(employee);
             setAllowOnClick(false);
-            setShowModal(true);
+            // setShowModal(true);
         }
     };
     
@@ -64,8 +64,8 @@ function Card() {
                                     
                                 </motion.div>
                                 {/* Condition to ensure that only the card clicked is shown */}
-                                {showModal && employeeID === employee && (
-                                    <Modal setShowModal={setShowModal} showModal={setShowModal} employeeID={employee} setEmployeeID={setEmployeeID} setAllowOnClick={setAllowOnClick} allowOnClick={allowOnClick}/>
+                                { employeeID === employee && (
+                                    <Modal employeeID={employee} setEmployeeID={setEmployeeID} setAllowOnClick={setAllowOnClick} allowOnClick={allowOnClick}/>
                                 )}
                                 
                                 </>
