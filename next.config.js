@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      domains: ['software.neumatica-fromi.com'],
+      domains: ['software.neumatica-fromi.com','i.imgur.com'],
     },
   }
   
